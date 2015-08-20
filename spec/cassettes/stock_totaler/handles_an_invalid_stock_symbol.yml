@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dev.markitondemand.com/Api/v2/Quote/json?symbol=ZZZZ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Date:
+      - Wed, 19 Aug 2015 08:04:31 GMT
+      Content-Length:
+      - '111'
+      Content-Type:
+      - text/javascript; charset=UTF-8
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      P3p:
+      - CP="NON PHY ONL UNI PUR FIN COM NAV INT DEM STA HEA CUR ADM DEV OUR IND",
+        policyref="/w3c/p3p.xml"
+      Set-Cookie:
+      - 3481%5F0=92BE36646E2E4075AA48FD01D02CC37A; path=/; HttpOnly
+      - GZIP=1; expires=Mon, 17-Aug-2020 08:04:31 GMT; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Message":"No symbol matches found for ZZZZ. Try another symbol such
+        as MSFT or AAPL, or use the Lookup API."}'
+    http_version: 
+  recorded_at: Wed, 19 Aug 2015 08:04:32 GMT
+recorded_with: VCR 2.9.3
